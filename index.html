@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!-- ajouté <html lang="fr"> -->
+<html lang="fr">     
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta charset="UTF-8" >
+    <!-- ajouté la balise <meta name="description" content -->
     <meta
       name="description"
       content="Page de photographie de Nina Carducci, offrant une galerie, des services et des informations de contact."
     >
     <link
       rel="preload"
-      href="./assets/bootstrap/bootstrap.css"
+      href="./assets/bootstrap/bootstrap.min.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     >
     <noscript
-      ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"
+      ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"
     ></noscript>
     <link
       rel="preload"
@@ -30,63 +32,96 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     >
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Nina Carducci Photography",
-        "description": "Professional photography services offered by Nina Carducci, including gallery, service types with fees, and a contact form.",
-        "image": "https://example.com/assets/images/nina%20(1).webp",
-        "email": "contact@example.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Paris",
-          "addressRegion": "Île-de-France",
-          "addressCountry": "FR"
-        },
-        "sameAs": [
-          "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-        ],
-        "service": [
-          {
-            "@type": "Service",
-            "serviceType": "Shooting photo",
-            "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable.",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "EUR",
-              "price": "350",
-              "description": "Demi journee."
-            }
-          },
-          {
-            "@type": "Service",
-            "serviceType": "Retouches",
-            "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ?",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "EUR",
-              "price": "50",
-              "description": "Prix pour une photo."
-            }
-          },
-          {
-            "@type": "Service",
-            "serviceType": "Album photos",
-            "description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "EUR",
-              "price": "400",
-              "description": "Album A4"
-            }
-          }
-        ]
-      }
-      </script>
-      
+    <!-- Opengraph meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nina Carducci Photographie">
+    <meta property="og:description" content="Découvrez les services de photographie professionnelle de Nina Carducci, incluant une galerie, des services variés et les moyens de contact.">
+    <meta property="og:image" content="http://127.0.0.1:5500/assets/images/nina.webp">
+    <meta property="og:url" content="https://garima675.github.io/NINAPHOTOGRAPHY/">
+    <meta property="og:site_name" content="Nina Carducci Photographie">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- twitter card meta cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nina Carducci Photographie">
+    <meta name="twitter:description" content="Découvrez les services de photographie professionnelle de Nina Carducci, incluant une galerie, des services variés et les moyens de contact.">
+    <meta name="twitter:image" content="https://example.com/assets/images/nina.webp">
+    <meta name="twitter:site" content="@ninaphotography"> 
     
-    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+<!-- structured data for local seo -->
+    <script type="application/ld+json">
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Nina Carducci Photographie",
+          "description": "Services de photographie professionnelle a bordeaux offerts par Nina Carducci, incluant une galerie, les types de services avec les tarifs, et un formulaire de contact.",
+          "image": "https://example.com/assets/images/nina.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200",
+            "addressRegion": "Nouvelle-Aquitaine",
+            "addressCountry": "FR"
+          },
+          "telephone": "+33 5 56 67 78 89",
+          "openingHours": "Mo-Fr 10:00-19:00",
+          "areaServed": [
+            {
+              "@type": "Place",
+              "name": "Île-de-France"
+            },
+            {
+              "@type": "Place",
+              "name": "Bordeaux"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+          ],
+          "service": [
+            {
+              "@type": "Service",
+              "serviceType": "Shooting photo",
+              "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable.",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "price": "350",
+                "description": "Demi journée."
+              }
+            },
+            {
+              "@type": "Service",
+              "serviceType": "Retouches",
+              "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ?",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "price": "50",
+                "description": "Prix pour une photo."
+              }
+            },
+            {
+              "@type": "Service",
+              "serviceType": "Album photos",
+              "description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "price": "400",
+                "description": "Album A4"
+              }
+            }
+          ]
+        }
+        </script>
+        
+    
+<!--  différé le script Bootstrap Bundle, les scripts de la bibliothèque jQuery, le script MauGallery,
+       et le script personnalisé.-->
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -95,10 +130,11 @@
     ></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
-    <title>PagedephotographiedeNINA</title>
+    <title>Page de photographie de NINA CARDUCCI</title>
   </head>
   <body>
     <div class="top-header">
+      <!-- modifié les balises de titre -->
       <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
@@ -107,8 +143,9 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
+                  <!--  Ajoute alt-->
             <a
-              class="social-link"
+            class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
               ><img
@@ -150,12 +187,14 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <!-- ajoute alt a photos de corousel -->
             <img
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
               alt="photoone"
             >
           </div>
+          <!--Images différées en utilisant hazy loading  -->
           <div class="carousel-item">
             <img
               data-src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
@@ -166,6 +205,7 @@
 
             />
           </div>
+          <!-- Images différées en utilisant hazy loading -->
           <div class="carousel-item">
             <img
               data-src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
@@ -201,7 +241,9 @@
         <img src="./assets/images/nina.webp" alt="Image Nina" >
       </div>
       <div id="about-me">
+        <!-- modifié les balises de titre -->
         <h2 class="about-me__title">A propos de moi</h2>
+        <!-- modifié les balises de titre -->
         <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
@@ -223,6 +265,7 @@
       <h3 class="title">Portfolio</h3>
       <div class="container py-3">
         <div class="gallery" style="display: none">
+          <!-- ajoute alt a photos de gallery -->
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
@@ -282,6 +325,7 @@
       <div class="quote">
         <figure>
           <blockquote>
+            <!-- modifié les balises de titre -->
             <h3 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
@@ -294,6 +338,7 @@
       </div>
     </div>
     <div id="services">
+      <!--  -->
       <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
@@ -341,6 +386,7 @@
     <div class="quote">
       <figure>
         <blockquote>
+          <!-- modifié les balises de titre -->
           <h3 class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
@@ -353,11 +399,13 @@
     <div id="contact">
       <div class="container">
         <div class="form-container">
+          <!-- modifié les balises de titre -->
           <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form  method="post">
+            <!-- Mis à jour le formulaire HTML en ajoutant les attributs for -->
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" >
             <label for="email">Email</label>
@@ -373,6 +421,7 @@
           </form>
         </div>
         <div class="picture right">
+          <!-- ajoute alt -->
           <img src="./assets/images/camera.webp" alt="photodecamera" >
         </div>
       </div>
